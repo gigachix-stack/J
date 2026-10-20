@@ -3,96 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JavaScript Practice</title>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 820px; margin: 20px auto; padding: 0 16px; }
-  section { border: 1px solid #ccc; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
-  button { padding: 6px 14px; margin: 3px; cursor: pointer; }
-  input[type=text], select { padding: 6px; margin: 3px; }
-  .status { padding: 10px 14px; border-radius: 6px; margin-top: 8px; font-weight: bold; }
-  .status:empty { display: none; }
-  .status.ok { background: #d4f7d4; color: #0a5a0a; }
-  .status.warn { background: #fff3c4; color: #7a5a00; }
-  .status.bad { background: #fbd5d5; color: #8a1010; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
-  .card { border: 1px solid #ccc; border-radius: 8px; padding: 10px; }
-  .card h4 { margin: 0 0 6px; }
-  .avail { color: #0a7a0a; font-weight: bold; }
-  .busy { color: #a00; font-weight: bold; }
-  .track { background: #e5e7eb; border-radius: 6px; height: 14px; overflow: hidden; margin-top: 8px; }
-  .bar { background: #2563eb; height: 100%; width: 0%; }
-  .progress-label { font-size: 13px; margin: 4px 0; }
-  .card input[type=range] { width: 100%; }
-</style>
+<title>JavaScript</title>
+
 </head>
 <body>
 <h1>Практические задания</h1>
-<p>Задания 161–180: откройте Console (F12). Задания 181–185 работают прямо на этой странице.</p>
-
-<section>
-  <h2>Задание 181. Электронный пропуск</h2>
-  <form id="passForm">
-    <input type="text" id="passId" placeholder="Идентификатор, например ST-1001">
-    <select id="passGroup"><option value="">Выберите группу</option></select>
-    <button type="submit">Проверить доступ</button>
-  </form>
-  <div id="passResult" class="status"></div>
-  <div id="passTime"></div>
-  <small>Вымышленные учебные данные: ST-1001 и ST-1002 (РПО-23-1), ST-2001 (РПО-23-2), ST-3001 (ИС-23-1).</small>
-</section>
-
-<section>
-  <h2>Задание 182. Калькулятор оценки за семестр</h2>
-  <input type="text" id="semPractice" placeholder="Практические работы (40%)">
-  <input type="text" id="semSelf" placeholder="Самостоятельные (20%)">
-  <input type="text" id="semExam" placeholder="Экзамен (40%)">
-  <button id="semBtn">Рассчитать</button>
-  <button id="semClear">Очистить</button>
-  <p id="semResult"></p>
-</section>
-
-<section>
-  <h2>Задание 183. Интерактивный каталог оборудования</h2>
-  <input type="text" id="eqSearch" placeholder="Поиск по названию">
-  <select id="eqCategory"><option value="">Все категории</option></select>
-  <p id="eqCount"></p>
-  <div id="eqCards" class="cards"></div>
-</section>
-
-<section>
-  <h2>Задание 184. Генератор индивидуальных заданий</h2>
-  <input type="text" id="genName" placeholder="Имя студента">
-  <select id="genLevel">
-    <option value="A">Уровень A</option>
-    <option value="B">Уровень B</option>
-    <option value="C">Уровень C</option>
-  </select>
-  <button id="genBtn">Выдать задание</button>
-  <button id="genAgain">Сгенерировать заново</button>
-  <p id="genResult"></p>
-  <p id="genInfo"></p>
-</section>
-
-<section>
-  <h2>IT Project Dashboard</h2>
-  <p><em>Задание 185</em></p>
-  <div>
-    <input type="text" id="dbName" placeholder="Название проекта">
-    <select id="dbDirection"><option value="">Направление</option></select>
-    <input type="text" id="dbOwner" placeholder="Ответственный">
-  </div>
-  <div>
-    <input type="text" id="dbProgress" placeholder="Прогресс, 0–100">
-    <select id="dbStatus"></select>
-    <button id="dbAdd">Добавить проект</button>
-  </div>
-  <p id="dbMessage"></p>
-  <select id="dbFilter"><option value="">Все направления</option></select>
-  <strong id="dbAverage"></strong>
-  <div id="dbCards" class="cards"></div>
-  <small>Данные сохраняются в localStorage этого браузера. Используйте вымышленные названия.</small>
-</section>
-
+<p>откройте Console (F12).</p>
 <script src="script.js"></script>
 </body>
 </html>
